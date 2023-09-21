@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <div class="container background">
+    <div class="title">
+      <h1>Clima App</h1>
+      <p>Pronostico del Tiempo</p>
+      <img width="200" src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Weather-512.png" alt="">
+    </div>
+
+    <div class="search">
+      <ion-input [(ngModel)]='ciudadBuscada'
+      class="search-input" label="Ciudad:" counter="true" maxlength="30" helper-text="Ingresa tu Ciudad"
+      error-text="Please enter a valid email" fill="outline" labelPlacement="floating"></ion-input>
+    </div>
+    <div class="btn-search">
+      <ion-button [routerLink]="['/ciudad-info', ciudadBuscada]" color="secondary">Buscar</ion-button>
+    </div>
+  </div>
+</ion-content>

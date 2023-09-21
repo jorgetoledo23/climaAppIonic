@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title *ngIf=" encontrada === false" size="large">Ciudad no encontrada!</ion-title>
+      <ion-title *ngIf=" encontrada === true" size="large">{{ciudad}}</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div class="background">
+    <h2 *ngIf=" encontrada === false" size="large">Ciudad no encontrada!</h2>
+    
+    <div class="clima-info">
+      <p class="title" *ngIf=" encontrada === true" size="large">{{ciudadEncontrada?.Estacion}}</p>
+      
+      <div class="suntemp">
+        <img width="200" src="assets/icon/{{ciudadEncontrada?.Icono}}" alt="asd">
+        <p class="info temp">{{ciudadEncontrada?.Temp}} °C</p>
+      </div>
+      
+
+
+      <p class="info">{{fecha}}</p>
+      <p class="info">{{ciudadEncontrada?.HoraUpdate}}</p>
+
+      
+      
+
+      <div class="col-2">
+        <p class="info"><ion-icon name="thermometer-outline"></ion-icon>{{ciudadEncontrada?.Estado}}</p>
+        <p class="info"><ion-icon name="water-outline"></ion-icon>%{{ciudadEncontrada?.Humedad}}</p>
+      </div>
+      
+
+    </div>
+    
+
+
+
+
+  </div>
+
+</ion-content>

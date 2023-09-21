@@ -1,0 +1,40 @@
+.background{
+    background-image: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.clima-info{
+    text-align: center;
+}
+
+.info{
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+}
+
+.col-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.suntemp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp{
+    font-size: 30px;
+}
