@@ -1,15 +1,18 @@
 <ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
+  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title *ngIf=" encontrada === false" size="large">Ciudad no encontrada!</ion-title>
-      <ion-title *ngIf=" encontrada === true" size="large">{{ciudad}}</ion-title>
     </ion-toolbar>
-  </ion-header> -->
+  </ion-header>
 
   <div class="background">
-    <h2 *ngIf=" encontrada === false" size="large">Ciudad no encontrada!</h2>
+
+    <div>
+      <ion-icon class="back-icon" routerLink="/main-page" name="caret-back-outline"></ion-icon>
+    </div>
+
+    <h2 *ngIf="encontrada === false" size="large">Ciudad no encontrada!</h2>
     
-    <div class="clima-info">
+    <div class="clima-info" *ngIf="encontrada === true">
       <p class="title" *ngIf=" encontrada === true" size="large">{{ciudadEncontrada?.Estacion}}</p>
       
       <div class="suntemp">
